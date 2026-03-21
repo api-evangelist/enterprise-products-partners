@@ -1,0 +1,108 @@
+openapi: 3.1.0
+info:
+  title: Enterprise Products Partners Pipeline Operations API
+  description: >-
+    Enterprise Products Partners provides midstream energy services including
+    pipeline operations, natural gas processing, and energy logistics across
+    North America.
+  version: 1.0.0
+  contact:
+    name: Enterprise Products Partners
+    url: https://www.enterpriseproducts.com/
+servers:
+  - url: https://api.enterpriseproducts.com
+    description: Production
+paths:
+  /pipelines:
+    get:
+      operationId: getPipelines
+      summary: Get Pipelines
+      description: Retrieve information about pipeline systems.
+      tags:
+        - Pipelines
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PipelineList'
+  /pipelines/{pipelineId}:
+    get:
+      operationId: getPipelineById
+      summary: Get Pipeline by ID
+      description: Retrieve details of a specific pipeline.
+      tags:
+        - Pipelines
+      parameters:
+        - name: pipelineId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pipeline'
+  /capacity:
+    get:
+      operationId: getCapacity
+      summary: Get Capacity Information
+      description: Retrieve pipeline capacity and throughput data.
+      tags:
+        - Operations
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CapacityList'
+tags:
+  - name: Pipelines
+    description: Pipeline information operations
+  - name: Operations
+    description: Operational data operations
+components:
+  schemas:
+    Pipeline:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        type:
+          type: string
+        region:
+          type: string
+        status:
+          type: string
+    PipelineList:
+      type: object
+      properties:
+        pipelines:
+          type: array
+          items:
+            $ref: '#/components/schemas/Pipeline'
+    Capacity:
+      type: object
+      properties:
+        pipelineId:
+          type: string
+        capacity:
+          type: number
+        throughput:
+          type: number
+        unit:
+          type: string
+    CapacityList:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/Capacity'

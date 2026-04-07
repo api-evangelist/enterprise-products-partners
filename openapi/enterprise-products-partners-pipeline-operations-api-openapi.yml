@@ -62,10 +62,10 @@ paths:
               schema:
                 $ref: '#/components/schemas/CapacityList'
 tags:
-  - name: Pipelines
-    description: Pipeline information operations
   - name: Operations
     description: Operational data operations
+  - name: Pipelines
+    description: Pipeline information operations
 components:
   schemas:
     Pipeline:

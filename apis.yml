@@ -10,7 +10,7 @@ description: >-
   marine transportation services. The company does not publish a public
   developer API portal but maintains internal and partner-facing integration
   capabilities for pipeline operations and energy logistics.
-type: Profile
+kind: profile
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - Energy

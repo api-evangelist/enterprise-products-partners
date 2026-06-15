@@ -1,0 +1,271 @@
+{
+  "item": [
+    {
+      "id": "2f3de969-fa13-4e5c-ac7b-5894a6d8191e",
+      "name": "Operations",
+      "description": {
+        "content": "Operational data operations",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "0f448a7d-557b-4ed1-a202-238208047597",
+          "name": "Get Capacity Information",
+          "request": {
+            "name": "Get Capacity Information",
+            "description": {
+              "content": "Retrieve pipeline capacity and throughput data.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "capacity"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3d957e95-68be-4896-8acd-5e8d3300d57d",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "capacity"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"data\": [\n    {\n      \"pipelineId\": \"string\",\n      \"capacity\": 7358.3550175685905,\n      \"throughput\": 3512.271339639931,\n      \"unit\": \"string\"\n    },\n    {\n      \"pipelineId\": \"string\",\n      \"capacity\": 9332.489920479538,\n      \"throughput\": 5694.422449043432,\n      \"unit\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "2beeaa4c-ca69-42c8-b2af-6c66d0039d38",
+      "name": "Pipelines",
+      "description": {
+        "content": "Pipeline information operations",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "c8b9412b-fc2c-4add-91bf-f7edb60d61e3",
+          "name": "Get Pipelines",
+          "request": {
+            "name": "Get Pipelines",
+            "description": {
+              "content": "Retrieve information about pipeline systems.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "pipelines"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f02f38c3-f43b-4810-9c28-da829e02da50",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "pipelines"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"pipelines\": [\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"type\": \"string\",\n      \"region\": \"string\",\n      \"status\": \"string\"\n    },\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"type\": \"string\",\n      \"region\": \"string\",\n      \"status\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "d583eaab-46ca-4e85-86b6-f9ab5f419162",
+          "name": "Get Pipeline by ID",
+          "request": {
+            "name": "Get Pipeline by ID",
+            "description": {
+              "content": "Retrieve details of a specific pipeline.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "pipelines",
+                ":pipelineId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "pipelineId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3d6f2161-9585-4e3b-ba45-7e48f0566537",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "pipelines",
+                    ":pipelineId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "pipelineId",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"string\",\n  \"name\": \"string\",\n  \"type\": \"string\",\n  \"region\": \"string\",\n  \"status\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.enterpriseproducts.com",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "e93417b3-91e0-4a79-a540-0e10bc21eb31",
+    "name": "Enterprise Products Partners Pipeline Operations API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Enterprise Products Partners provides midstream energy services including pipeline operations, natural gas processing, and energy logistics across North America.\n\nContact Support:\n Name: Enterprise Products Partners",
+      "type": "text/plain"
+    }
+  }
+}

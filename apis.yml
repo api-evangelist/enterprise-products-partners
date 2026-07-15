@@ -43,6 +43,8 @@ apis:
       maintains internal and partner-facing integration capabilities for pipeline operations, natural gas processing,
       and energy logistics.
 common:
+  - type: AgenticAccess
+    url: agentic-access/enterprise-products-partners-agentic-access.yml
   - type: DomainSecurity
     url: security/enterprise-products-partners-domain-security.yml
   - type: LinkedIn

@@ -1,0 +1,49 @@
+openapi: 3.1.0
+info:
+  title: Enterprise Products Partners Pipeline Operations API
+  description: Enterprise Products Partners provides midstream energy services including pipeline operations, natural gas processing, and energy logistics across North America.
+  version: 1.0.0
+  contact:
+    name: Enterprise Products Partners
+    url: https://www.enterpriseproducts.com/
+servers:
+- url: https://api.enterpriseproducts.com
+  description: Production
+tags:
+- name: Operations
+  description: Operational data operations
+paths:
+  /capacity:
+    get:
+      operationId: getCapacity
+      summary: Get Capacity Information
+      description: Retrieve pipeline capacity and throughput data.
+      tags:
+      - Operations
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CapacityList'
+components:
+  schemas:
+    CapacityList:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/Capacity'
+    Capacity:
+      type: object
+      properties:
+        pipelineId:
+          type: string
+        capacity:
+          type: number
+        throughput:
+          type: number
+        unit:
+          type: string

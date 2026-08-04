@@ -1,0 +1,16 @@
+{
+  "provider": "enterprise-products-partners",
+  "sources": [
+    "enterprise-products-partners-operations-api-openapi.yml",
+    "enterprise-products-partners-pipelines-api-openapi.yml"
+  ],
+  "outputs": [
+    "enterprise-products-partners-operations-api-openapi.yml",
+    "enterprise-products-partners-pipelines-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

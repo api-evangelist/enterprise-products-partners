@@ -32,7 +32,7 @@ created: '2026-03-21'
 modified: '2026-05-19'
 position: Consumer
 access: 3rd-Party
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
 - aid: enterprise-products-partners:enterprise-products-partners-operations-api
   name: Enterprise Products Partners Operations API

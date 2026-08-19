@@ -1,0 +1,47 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Enterprise Products Partners Pipeline Operations Pipelines API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Pipelines",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get Pipelines",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.enterpriseproducts.com/pipelines"
+          },
+          "docs": "Retrieve information about pipeline systems."
+        },
+        {
+          "info": {
+            "name": "Get Pipeline by ID",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.enterpriseproducts.com/pipelines/:pipelineId",
+            "params": [
+              {
+                "name": "pipelineId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve details of a specific pipeline."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

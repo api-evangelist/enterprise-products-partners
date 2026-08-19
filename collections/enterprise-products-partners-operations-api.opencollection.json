@@ -1,0 +1,29 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Enterprise Products Partners Pipeline Operations API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Operations",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get Capacity Information",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.enterpriseproducts.com/capacity"
+          },
+          "docs": "Retrieve pipeline capacity and throughput data."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

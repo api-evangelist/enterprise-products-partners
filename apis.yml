@@ -39,7 +39,8 @@ apis:
   description: Operational data operations
   humanURL: https://www.enterpriseproducts.com/
   baseURL: https://api.enterpriseproducts.com
-  tags:
+  tags: []
+  tags_raw:
   - Operations
   properties:
   - type: OpenAPI

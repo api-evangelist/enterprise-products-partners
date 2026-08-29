@@ -8,6 +8,17 @@ description: >-
   services. The company does not publish a public developer API portal but maintains internal and partner-facing
   integration capabilities for pipeline operations and energy logistics.
 kind: profile
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - openapi
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: enterprise
   onboarding: unknown

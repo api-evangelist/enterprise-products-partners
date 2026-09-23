@@ -1,7 +1,9 @@
 ---
 title: Why Long-Term Investors Should Look at Enterprise ...
 url: https://finance.yahoo.com/news/why-long-term-investors-look-160000040.html
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Enterprise Products Partners" press release artificial intelligence'
 position: 4
 source: serpapi-google

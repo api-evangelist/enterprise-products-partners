@@ -29,13 +29,6 @@ paths:
                 $ref: '#/components/schemas/CapacityList'
 components:
   schemas:
-    CapacityList:
-      type: object
-      properties:
-        data:
-          type: array
-          items:
-            $ref: '#/components/schemas/Capacity'
     Capacity:
       type: object
       properties:
@@ -47,3 +40,10 @@ components:
           type: number
         unit:
           type: string
+    CapacityList:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/Capacity'

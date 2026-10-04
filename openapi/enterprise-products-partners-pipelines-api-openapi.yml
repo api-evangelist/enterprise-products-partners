@@ -49,13 +49,6 @@ paths:
                 $ref: '#/components/schemas/Pipeline'
 components:
   schemas:
-    PipelineList:
-      type: object
-      properties:
-        pipelines:
-          type: array
-          items:
-            $ref: '#/components/schemas/Pipeline'
     Pipeline:
       type: object
       properties:
@@ -69,3 +62,10 @@ components:
           type: string
         status:
           type: string
+    PipelineList:
+      type: object
+      properties:
+        pipelines:
+          type: array
+          items:
+            $ref: '#/components/schemas/Pipeline'

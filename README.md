@@ -1,4 +1,4 @@
-# Enterprise Products Partners (enterprise-products-partners)
+# Enterprise Products Partners
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,56 +66,114 @@
 
 Enterprise Products Partners L.P. is one of the largest publicly traded partnerships and a leading North American provider of midstream energy services, headquartered in Houston, Texas. The company operates more than 50,000 miles of pipeline and over 300 million barrels of liquids storage, providing crude oil and natural gas transportation, NGL processing and fractionation, petrochemical and refined product logistics, storage, and marine transportation services. The company does not publish a public developer API portal but maintains internal and partner-facing integration capabilities for pipeline operations and energy logistics.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/enterprise-products-partners/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/enterprise-products-partners/refs/heads/main/apis.yml)
+**Areas:** Energy · Midstream · Natural Gas · Pipelines · Fortune 100 · Oil and Gas
 
-## Scope
+## Enterprise Products Partners on APIs.io
 
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for Enterprise Products Partners is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/enterprise-products-partners/](https://apis.io/providers/enterprise-products-partners/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (2)
 
-- Energy
-- Midstream
-- Natural Gas
-- Pipelines
+- [Enterprise Products Partners Operations API](https://apis.io/apis/enterprise-products-partners/enterprise-products-partners-operations-api/) — Operational data operations
+- [Enterprise Products Partners Pipelines API](https://apis.io/apis/enterprise-products-partners/enterprise-products-partners-pipelines-api/) — Pipeline information operations
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-03-21
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Enterprise Products Partners Pipeline Operations API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-Enterprise Products Partners is one of the largest publicly traded partnerships and a leading North American provider of midstream energy services. The company does not offer a broadly public developer API portal but maintains internal and partner-facing integration capabilities for pipeline operations, natural gas processing, and energy logistics.
+- [Enterprise Products Partners Agentic Access](https://apis.io/agentic-access/enterprise-products-partners/enterprise-products-partners-agentic-access/)
 
-- **Human URL:** [https://www.enterpriseproducts.com/](https://www.enterpriseproducts.com/)
-- **Base URL:** `https://api.enterpriseproducts.com`
+#### Collections (3)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Energy
-- Midstream
-- Natural Gas
-- Pipelines
+- [Enterprise Products Partners Pipeline Operations API](https://apis.io/collections/enterprise-products-partners/open-enterprise-products-partners-operations-api/)
+- [Enterprise Products Partners Pipeline Operations API](https://apis.io/collections/enterprise-products-partners/open-enterprise-products-partners-pipeline-operations-api/)
+- [Enterprise Products Partners Pipeline Operations Pipelines API](https://apis.io/collections/enterprise-products-partners/open-enterprise-products-partners-pipelines-api/)
 
-#### Properties
+#### Security (1)
 
-- [Documentation](https://www.enterpriseproducts.com/)
-- [OpenAPI](openapi/enterprise-products-partners-pipeline-operations-api-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/enterprise-products-partners-pipeline-operations-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/enterprise-products-partners-pipeline-operations-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-## Common Properties
+- [Enterprise Products Partners Domain Security](https://apis.io/security/enterprise-products-partners/enterprise-products-partners-domain-security/)
 
-- [LinkedIn](https://www.linkedin.com/company/enterprise-products)
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Enterprise Products Partners Plans Pricing](https://apis.io/plans/enterprise-products-partners/enterprise-products-partners-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Enterprise Products Partners Rate Limits](https://apis.io/rate-limits/enterprise-products-partners/enterprise-products-partners-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Enterprise Products Partners Finops](https://apis.io/finops/enterprise-products-partners/enterprise-products-partners-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://www.enterpriseproducts.com/)
-- [Investors](https://www.enterpriseproducts.com/investors)
-- [Operations](https://www.enterpriseproducts.com/operations)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 19.4** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 41.6 |
+| Contract governance | 0.0 |
+| Operational transparency | 5.3 |
+| Developer ergonomics | 9.5 |
+| Access clarity | 5.3 |
+
+**Agent readiness 17.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.9** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/enterprise-products-partners/](https://apis.io/providers/enterprise-products-partners/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Enterprise Products Partners: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/enterprise-products-partners/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
